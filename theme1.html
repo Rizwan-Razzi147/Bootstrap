@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dd04c97177.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0%;
+            padding: 0%;
+            /* overflow-x: hidden; */
+         }
+         .section{
+             padding-top: 70px;
+             padding-bottom: 70px;
+         }
+         .section h2.section-head {
+            text-align: center;
+            margin-bottom: 40px;
+         }
+         .section h2.section-head:after{
+             content:"";
+             background-color: orangered;
+             margin: 20px auto;
+             width: 100px;
+             height: 3px;
+             display: block;
+         }
+
+        #header{
+            color: white;
+            background: #000;
+        }
+        #logo{
+            margin-top: 8px;
+        }
+        #menu{
+            list-style: none;      
+            margin: 0%;      
+            padding: 0%;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            color: white;
+            padding: 15px 10px;
+            display: block;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        #banner{
+            background-image: url(./Image/image1.jpg);
+            background-size: cover;
+        }
+        .banner-title{
+            padding-top: 5rem;
+        }
+        .banner-title h1{
+            background: rgba(225, 255, 255, 0.8);
+            display: inline-block;
+            padding: 10px;
+            margin: 0%;
+        }
+        .banner-title p.lead{
+            color: white;
+            padding: 10px;
+            background: rgba(231, 76, 60, 0.7);
+        }
+
+        .service-box{
+            text-align: center;
+        }
+        .service-box i.fa{
+            color: orangered;
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        #testimonials{
+            background-image: url(./Image/image2.jpg);
+            background-size: 100% 100%;
+            padding: 50px 0;
+            position: relative;
+            color: white;
+        }
+        .testimonials>img{
+            width: 70px;
+            height: 50px;
+            border-radius: 100%;
+        }
+        .news-post img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .news-post h3{
+            font-size: 1.35rem;
+            color: orangered;
+        }
+        .post-date{
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        .post-date:before{
+            content:"\f073";
+            font-family: fontAwesome;
+            padding-right: 5px ;
+        }
+        .read-more:after{
+            content:"\f101";
+            font-family: fontAwesome;
+            padding-left: 5px ;
+        }
+        .news-post a{
+            color: orangered;
+        }
+        .footer{
+            background-color: rgb(36, 32, 58);
+            color: white;
+            padding: 20px 0;
+        }
+        .footer-wized h4:after{
+            content: "";
+            background-color: #fff;
+            display: block;
+            width: 50px;
+            height: 2px;
+            margin: 5px 0;
+        }
+        .footer-wized a{
+            color: #fff;
+         }
+         .list-unstyled li:before{
+            content:"\f101";
+            font-family: fontAwesome;
+            padding-right: 5px ;
+         }
+         .last-footer{
+            background-color: rgb(6, 5, 10);
+            color: #fff;
+            padding: 10px 0;
+         }
+         #socail-icons{
+             list-style: none;
+             margin: 0;
+             padding: 0%;
+         }
+         #socail-icons li{
+             padding-left: 5px;
+             display: inline-block;
+             color: #fff;
+         }
+         #socail-icons a{
+             color: #fff;
+             font-size: 20px;
+         }
+         @media (max-width: 992px){
+            .news-post{
+                margin-bottom: 30px;
+            }
+         }
+         @media ( max-width: 768px){
+            .section{
+             padding-top: 40px;
+             padding-bottom: 40px;
+         }
+            .banner-title{
+                padding-top: 0;
+            }
+            .banner-title h1{
+                font-size: 1.7rem;
+            }
+             #logo{
+                 text-align: center;
+                 margin: 10px 0;
+             }
+             #menu{
+                text-align: center;
+             }
+            #testimonials{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .service-box{
+                margin-bottom: 30px;
+            }
+           
+            .footer-wized{
+                margin-bottom: 20px;
+            }
+            .last-footer{
+                text-align: center;
+            }
+            #socail-icons{
+                margin-top: 10px;
+            }
+         }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 id="logo">Glozzom</h3>
+                
+            </div>
+            <div class="col-md-8">
+                 <ul id="menu" class=" float-md-right">
+                     <li><a href="">home</a></li>
+                     <li><a href="">about us</a></li>
+                     <li><a href="">gallery</a></li>
+                     <li><a href="">products</a></li>
+                     <li><a href="">contact us</a></li>
+                 </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="banner">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8 col-lg-6">
+                    <div class="banner-title">
+                        <h1 class="title">some heading goes here</h1>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, molestiae mollitia temporibus facere illo vel consequatur excepturi repudiandae rerum quod.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+        <div class="row ">
+            <div class="col-md-12">
+                <h2 class="section-head">some heading goes here</h2>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-anchor"></i>
+                <h3>some heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit cum repudiandae ipsa.</p>
+            </div>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa  fa-bar-chart"></i>
+                <h3>some heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit cum repudiandae ipsa.</p>
+            </div>
+            </div>
+            <div class=" col-sm-6 col-md-4">
+                <div class="service-box">
+                    <i class="fa fa-diamond"></i>
+                <h3>some heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit cum repudiandae ipsa.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<div id="testimonials" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h2 class="section-head">testimonials</h2>
+
+            </div>
+            <div class="col-md-6">
+                <div class="testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum repudiandae, in fugiat ea suscipit?</p>
+                    <img src="./Image/images.jpg" alt="">
+                    <div class="author">bill gates</div>
+                    <div class="author-company">Microsoft</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illum repudiandae, in fugiat ea suscipit?</p>
+                    <img src="./Image/Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg" alt="">
+                    <div class="author">Steve Jobs</div>
+                    <div class="author-company">Apple</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="news" class="container section" >
+        <div class="row">
+            <div class="col-md-12">
+             <h2 class="section-head">Recent News</h2>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="news-post">
+                <img src="./Image/pic-1.jpg" alt="">
+                <h3><a href="">News Heading Here</a></h3>
+                <div class="post-date">Aprail 20, 2022</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odit?</p>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class=" col-md-6 col-lg-3">
+            <div class="news-post">
+                <img src="./Image/pic-2.jpg" alt="">
+                <h3><a href="">News Heading Here</a></h3>
+                <div class="post-date">Aprail 20, 2022</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odit?</p>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class=" col-md-6 col-lg-3">
+            <div class="news-post">
+                <img src="./Image/image3.jpg" alt="">
+                <h3><a href="">News Heading Here</a></h3>
+                <div class="post-date">Aprail 20, 2022</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odit?</p>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class=" col-md-6 col-lg-3">
+            <div class="news-post">
+                <img src="./Image/pic-4.jpg" alt="">
+                <h3><a href="">News Heading Here</a></h3>
+                <div class="post-date">Aprail 20, 2022</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odit?</p>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-6 col-md-4">
+                    <div class="footer-wized">
+                    <h4>About Company</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quibusdam nulla libero. Maiores, error magni!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cupiditate!</p>
+                </div>
+                </div>
+                <div class=" col-sm-6 col-md-4">
+                    <div class="footer-wized">
+                    <h4>Latest News</h4>
+                    <ul class="list-unstyled m-0 p-0">
+                        <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                        <li><a href="">Lorem ipsum dolor sit amet consectetur.</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class=" col-sm-6 col-md-4">
+                   <div class="footer-wized">
+                    <h4>Company Name</h4>
+                  <address>
+                     <b>Rizwan Razzi, Inc </b><br>
+                      IT Tower, Hafeez Market <br>
+                      Punjab, Pakistan 1238983 <br>
+                      P: (123) 456 7890 
+                  </address>
+                </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    copyright 2022 company name
+                </div>
+                <div class="col-md-6">
+                  <ul id="socail-icons" class="float-md-right" >
+          <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li> 
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li> 
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
